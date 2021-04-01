@@ -1,10 +1,15 @@
 import React from 'react';
 import './index.css'
+
 import Primeiro from "././components/basicos/Primeiro";
 import ComPrametro from "./components/basicos/ComParametro";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Familia from "./components/basicos/Familia"
+import ListaAlunos from "./components/repeticao/ListaAlunos"
+import TabelaProduto from "./components/repeticao/TabelaProduto"
 import FamiliaMembro from "./components/basicos/FamiliaMembro"
+import ParOuImpar from "./components/condicional/ParOuImpar"
+import UserInfo from "./components/condicional/userInfo"
 import Card from   './layout/Card'
 import './App.css'
 
@@ -14,6 +19,17 @@ export default () => (
      <div className="App">
       <h1>Fundamentos do React js</h1>
         <div className="Cards">
+         <Card titulo="#7 - Condicional" color="#2F4F4F" >
+            <ParOuImpar numero="15"></ParOuImpar>
+            <UserInfo  usuario={{nome: 'Ana'}}/>
+          </Card>
+
+         <Card titulo="#6 - Repetição" color="#1E90FF"> 
+            <TabelaProduto></TabelaProduto>
+          </Card>
+          <Card titulo="#5 - Repetição" color="#836FFF"> 
+            <ListaAlunos></ListaAlunos>
+          </Card>
           <Card titulo="#4 - Compoenente com Filhos" color="#F4D03F">
               <Familia sobrenome="Garcia">
                 <FamiliaMembro nome="Pedro"/>
