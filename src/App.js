@@ -11,6 +11,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro"
 import ParOuImpar from "./components/condicional/ParOuImpar"
 import UserInfo from "./components/condicional/userInfo"
 import Card from   './layout/Card'
+import InputForm from "./Formulario/InputForm"
 import './App.css'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -19,6 +20,9 @@ export default () => (
      <div className="App">
       <h1>Fundamentos do React js</h1>
         <div className="Cards">
+        <Card titulo="#8 - Componente Controlado" color="#D2691E" >
+            <InputForm></InputForm>
+          </Card>
          <Card titulo="#7 - Condicional" color="#2F4F4F" >
             <ParOuImpar numero="15"></ParOuImpar>
             <UserInfo  usuario={{nome: 'Ana'}}/>
